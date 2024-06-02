@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 load_dotenv()
 MONGO_URL = os.getenv("MONGO_URL")
-PORT=os.getenv("PORT")||4000
+PORT=os.getenv("PORT")
 
 @app.route('/get_data', methods=['GET'])
 
